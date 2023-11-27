@@ -43,8 +43,7 @@ def mediapipe_binary_graph(name, graph = None, output_name = None, deps = [], te
         visibility = ["//visibility:private"],
         deps = [
             clean_dep("//mediapipe/framework/tool:text_to_binary_graph"),
-            name + "_gather_cc_protos",
-        ],
+        ] + depssss,
         tags = ["manual"],
         testonly = testonly,
     )
